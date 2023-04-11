@@ -140,65 +140,11 @@ some-element {
   }
 
 
-  @media screen and (max-width: 320px) {
-    /* CSS rules for screens with a maximum width of 320px */
+  @media screen and (max-width: 1930px) and (min-width: 1201px){
+    /* CSS rules for screens with a maximum width of 1200px */
     .dashboard{
-        grid-template-areas: "t t "  /* .title first row*/
-                             "m c "
-                             "w p"  /* .monster and .welcome second row */
-                             "l l"
-                             "g g"; /* parents, customize, level-up, and play row 3 */
-        grid-template-rows: 100px 100px 100px 100px 100px;
-        grid-template-columns: 1fr 1fr ;
-    }
-  }
-
-  @media screen and (max-width: 480px) and (min-width: 321px) {
-    /* CSS rules for screens with a maximum width of 480px */
-    body{
-        background-color: blue;
-    }
-    .dashboard{
-      max-width: 400px;
-      height: 600px;
-      display: grid;
-      grid-gap: 15px;
-        grid-template-areas: "t t"  /* .title first row*/
-                             "m c"
-                             "w p"  /* .monster and .welcome second row */
-                             "l l"
-                             "g g"; /* parents, customize, level-up, and play row 3 */
-        grid-template-rows: 100px 100px 100px 100px 200px;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-  }
-
-  @media screen and (max-width: 768px) and (min-width: 481px) {
-    /* CSS rules for screens with a maximum width of 768px */
-    body{
-      background-color: green;
-  }
-    .dashboard{
-        max-width: 400px;
-        height: 600px;
-        display: grid;
-        grid-gap: 15px;
-        grid-template-areas: "t t"  /* .title first row*/
-        "m c"
-        "w p"  /* .monster and .welcome second row */
-        "l l"
-        "g g"; /* parents, customize, level-up, and play row 3 */
-      grid-template-rows: 100px 150px 150px 200px 200px;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media screen and (max-width: 992px) and (min-width: 769px) {
-    /* CSS rules for screens with a maximum width of 992px */
-    .dashboard{
-        max-width: 800px;
-        height: 600px;
+        max-width: 2800px;
+        height: 800px;
         display: grid;
         grid-gap: 15px;
         grid-template-areas: "t t t t"  /* .title first row*/
@@ -207,38 +153,83 @@ some-element {
         grid-template-rows: 100px 200px 200px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-  }
-
-  @media screen and (max-width: 1200px) and (min-width: 993px){
-    /* CSS rules for screens with a maximum width of 1200px */
-    .dashboard{
-        max-width: 800px;
-        height: 600px;
-        display: grid;
-        grid-gap: 15px;
-        grid-template-areas: "t t t "  /* .title first row*/
-                             "m w w "  /* .monster and .welcome second row */
-                             "p c l "
-                             "g g g"; /* parents, customize, level-up, and play row 3 */
-        grid-template-rows: 100px 200px 200px 300px;
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
 }
 
-    @media screen and (max-width: 1350px) and (min-width: 1201px){
-        /* CSS rules for screens with a maximum width of 1200px */
-        body{
-          background-color: green;
-        }
-        .dashboard{
-            max-width: 1800px;
-            height: 600px;
-            display: grid;
-            grid-gap: 15px;
-            grid-template-areas: "t t t t"  /* .title first row*/
-                                 "m w w w"  /* .monster and .welcome second row */
-                                 "p c l g"; /* parents, customize, level-up, and play row 3 */
-            grid-template-rows: 100px 200px 200px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
+@media screen and (max-width: 1200px) and (min-width: 993px){
+  /* CSS rules for screens with a maximum width of 1200px */
+  .dashboard{
+      max-width: 800px;
+      height: 600px;
+      display: grid;
+      grid-gap: 15px;
+      grid-template-areas: "t t t "  /* .title first row*/
+                           "m w w "  /* .monster and .welcome second row */
+                           "p c l "
+                           "g g g"; /* parents, customize, level-up, and play row 3 */
+      grid-template-rows: 100px 200px 200px 300px;
+      grid-template-columns: 1fr 1fr 1fr ;
   }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  /* CSS rules for screens with a maximum width of 992px */
+  .dashboard{
+      max-width: 800px;
+      height: 600px;
+      display: grid;
+      grid-gap: 15px;
+      grid-template-areas: "t t t t"  /* .title first row*/
+                           "m w w w"  /* .monster and .welcome second row */
+                           "p c l g"; /* parents, customize, level-up, and play row 3 */
+      grid-template-rows: 100px 200px 200px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  /* CSS rules for screens with a maximum width of 768px */
+  .dashboard{
+      max-width: 400px;
+      height: 600px;
+      display: grid;
+      grid-gap: 15px;
+      grid-template-areas: "t t"  /* .title first row*/
+      "m c"
+      "w p"  /* .monster and .welcome second row */
+      "l l"
+      "g g"; /* parents, customize, level-up, and play row 3 */
+    grid-template-rows: 100px 150px 150px 200px 200px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+  /* CSS rules for screens with a maximum width of 480px */
+  .dashboard{
+    max-width: 400px;
+    height: 600px;
+    display: grid;
+    grid-gap: 15px;
+      grid-template-areas: "t t"  /* .title first row*/
+                           "m c"
+                           "w p"  /* .monster and .welcome second row */
+                           "l l"
+                           "g g"; /* parents, customize, level-up, and play row 3 */
+      grid-template-rows: 100px 100px 100px 100px 200px;
+      grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  /* CSS rules for screens with a maximum width of 320px */
+  .dashboard{
+      grid-template-areas: "t t "  /* .title first row*/
+                            "m c "
+                            "w p"  /* .monster and .welcome second row */
+                            "l l"
+                            "g g"; /* parents, customize, level-up, and play row 3 */
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-template-columns: 1fr 1fr ;
+  }
+}
